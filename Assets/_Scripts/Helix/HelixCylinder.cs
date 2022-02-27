@@ -13,6 +13,6 @@ public class HelixCylinder : MonoBehaviour
 
     void Update()
     {
-        transform.eulerAngles = new Vector3(0,0,helix.gameObject.transform.eulerAngles.z % 25);
+        transform.eulerAngles = new Vector3(0,0,helix.gameObject.transform.eulerAngles.z / 5); //%25
     }
 }

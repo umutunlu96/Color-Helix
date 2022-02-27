@@ -8,8 +8,12 @@ public class Helix : MonoBehaviour
     private bool movable = true;
     private float angle;
     private float lastDeltaAngle, lastTouchX;
-    private float speed = 1.7f;
+    public float speed = 1.7f;
 
+    void Start()
+    {
+        
+    }
 
     void Update()
     {
@@ -20,7 +24,7 @@ public class Helix : MonoBehaviour
             angle += lastDeltaAngle * 360 * speed;
             lastTouchX = mouseX;
         }
-        else if (lastDeltaAngle != 0)//Ekrana dokunmadigimizda yavaslatmak icin
+        else if (lastDeltaAngle != 0)
         {
             lastDeltaAngle -= lastDeltaAngle * 5 * Time.deltaTime;
             angle += lastDeltaAngle * 360 * speed;
@@ -32,6 +36,6 @@ public class Helix : MonoBehaviour
 
     private float GetMouseX()
     {
-        return Input.mousePosition.x / (float)Screen.width;
+        return Input.mousePosition.x / (float)Screen.width; 
     }
 }

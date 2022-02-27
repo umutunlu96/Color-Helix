@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hit
+  - FinishLine
+  - Fail
+  - ColorBump
+  - Star
+  - Wall1
   layers:
   - Default
   - TransparentFX
